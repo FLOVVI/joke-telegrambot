@@ -29,4 +29,4 @@ class Joke:
                 for i in get_requests(link):
                     self.jokes.append(i.text)
         except requests.exceptions.ConnectionError as e:
-            print(f"Сайт недоступен: {e}")
+            print(f"Сайт недоступен")
